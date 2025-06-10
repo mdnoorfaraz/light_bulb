@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>light bulb</title>
+
+
+
+	<style>
+		body {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+
+		.container {
+			border-style: solid;
+			border-color: red;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			gap: 13px;
+		}
+
+		img {
+			width: 300px;
+			height: 400px;
+			object-fit: contain;
+		}
+
+		button {
+			background-image: linear-gradient(to bottom, #1ddb24, #aee272);
+			background-size: 100% 2px;
+			background-position: 0% 100%;
+			transition: background-position 0.3s;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<img id="bulb" src="imgs/off.jpg" alt="" />
+
+
+		<button id="toggleBtn">Turn On</button>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
